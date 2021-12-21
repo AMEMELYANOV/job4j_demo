@@ -1,0 +1,17 @@
+2021-12-21 08:14:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "DATABASECHANGELOGLOCK" не найдена
+Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+SELECT COUNT(*) FROM DATABASECHANGELOGLOCK [42102-200]
+2021-12-21 08:15:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE POSTS (
+   ID SERIAL PRIMARY KEY NOT NULL,
+   NAME VARCHAR(255),
+)[*];"; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE POSTS (
+   ID SERIAL PRIMARY KEY NOT NULL,
+   NAME VARCHAR(255),
+)[*];"; expected "identifier"; SQL statement:
+create table posts (
+   id serial primary key not null,
+   name varchar(255),
+); [42001-200]
